@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="discriptionBox">
+        <div><input id="discription" class="InputStyle" type="text" placeholder="Enter Expense or income"></div>
+        <div><input id="amount" class="InputStyle" type="number" placeholder="Enter Amount"></div>
+        <div><button class="btn" id="income" onclick="PutValue('Income')">Add into Income</button>
+            <button class="btn" id="expanse" onclick="PutValue('Expanse')">Add into Expanse</button>
+            <button id="total" onclick="total()">Amount</button>
+        </div>
+    </div>
+    <div class="tableBox">
+        <table id="table">
+            <tr>
+                <th>Discription</th>
+                <th>Amount</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
