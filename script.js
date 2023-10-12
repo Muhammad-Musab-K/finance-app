@@ -7,6 +7,10 @@ let amountTotal = 0
 
 
 function PutValue(type) {
+if(!discription.value && !amount.value ){
+    alert("Enter the value first")
+    return;
+}
     let tr = document.createElement('tr')
     let td1 = document.createElement('td')
     let td2 = document.createElement('td')
@@ -27,6 +31,7 @@ function cls() {
 }
 let sum = 0
 function total() {
+   
     let table = document.getElementById("table")
     for (let i = 1; i < table.rows.length; i++) {
         sum = sum + parseFloat(table.rows[i].cells[1].innerHTML);
